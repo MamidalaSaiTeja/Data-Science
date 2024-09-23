@@ -28,6 +28,20 @@
             color: #f1c40f;
         }
 
+        .profile-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile-image {
+            width: 180px; /* Size of the circular profile picture */
+            height: 180px; /* Ensuring it's a circle */
+            border-radius: 50%;
+            border: 2px solid #000;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px; /* Space below the image */
+        }
+
         section {
             padding: 50px 20px;
             background-color: #333;
@@ -86,16 +100,10 @@
             margin-bottom: 15px;
         }
 
-        footer {
-            background-color: #3a3a3a;
-            padding: 20px;
-            text-align: center;
-            color: #e0e0e0;
-        }
-
-        /* Style for the resume button */
         .resume-button {
-            display: inline-block;
+            display: block;
+            width: 200px; /* Fixed width for the button */
+            margin: 20px auto; /* Centered button */
             padding: 10px 20px;
             background-color: #4CAF50;
             color: white;
@@ -105,26 +113,25 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            margin-top: 20px;
         }
 
         .resume-button:hover {
             background-color: #45a049;
         }
 
-        /* Position the profile image in the top-right corner */
-        .profile-image {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 150px;
-            border-radius: 50%;
-            border: 2px solid #000;
+        footer {
+            background-color: #3a3a3a;
+            padding: 20px;
+            text-align: center;
+            color: #e0e0e0;
         }
-
     </style>
 </head>
 <body>
+
+<div class="profile-container">
+    <img src="Pic.jpeg.jpg" alt="Profile Picture" class="profile-image">
+</div>
 
 <header>
     <h1>SAI TEJA MAMIDALA</h1>
@@ -158,11 +165,7 @@
     </div>
 </section>
 
-<!-- Button to open PDF Resume -->
-<a href="Mamidala Sai Teja Resume.pdf" target="_blank" class="resume-button">View My Resume</a>
-
-<!-- Display Profile Picture in the top-right corner -->
-<img src="Pic.jpeg" alt="Profile Picture" class="profile-image">
+<a href="Mamidala_Sai_Teja_Resume.pdf" target="_blank" class="resume-button">View and Download My Resume</a>
 
 <footer>
     &copy; 2024 Sai Teja Mamidala
