@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #2d2d2d;
             color: #e0e0e0;
+            position: relative;
         }
 
         header {
@@ -91,6 +92,36 @@
             text-align: center;
             color: #e0e0e0;
         }
+
+        /* Style for the resume button */
+        .resume-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .resume-button:hover {
+            background-color: #45a049;
+        }
+
+        /* Position the profile image in the top-right corner */
+        .profile-image {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            border-radius: 50%;
+            border: 2px solid #000;
+        }
+
     </style>
 </head>
 <body>
@@ -126,6 +157,12 @@
         <p>Intern, Highradius India, Odisha. Machine Learning Model to predict the payment date of an invoice when it gets created in the system. Gained insight into software development as a sit-in phone team observer. Developed a Receivables Dashboard to visualize data in the form of grids. Attended in-service training classes and prepared documents needed to implement plans. Understood the functional overview of daily development activities.</p>
     </div>
 </section>
+
+<!-- Button to open PDF Resume -->
+<a href="Mamidala Sai Teja Resume.pdf" target="_blank" class="resume-button">View My Resume</a>
+
+<!-- Display Profile Picture in the top-right corner -->
+<img src="Pic.jpeg.jpg" alt="Profile Picture" class="profile-image">
 
 <footer>
     &copy; 2024 Sai Teja Mamidala
